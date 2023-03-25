@@ -1,4 +1,3 @@
-
 Empezamos listando todos los puertos abiertos del equipo: 
 
 PORT    STATE SERVICE  VERSION
@@ -123,15 +122,15 @@ Por lo que al no saber la clave vamos a utilizar fuerza bruta para intentar obte
 
 ![image](https://user-images.githubusercontent.com/122020487/227690098-f43f084e-0a43-410d-aeec-a89f7a510008.png)
 
-Ahora con el diccionario rockyou procedemos a intentar obtener la contraseña en texto plano: 
+Ahora con el diccionario rockyou.txt procedemos a intentar obtener la contraseña en texto plano: 
 
 ![image](https://user-images.githubusercontent.com/122020487/227691630-5b13f389-18fa-40b2-aeb2-9b25f4430eda.png)
 
-Ahora provamos nuevamente a conectarnos por ssh, al ver que podemos iniciar sesión obtenemos la flag del usuario:
+Ahora probamos nuevamente a conectarnos por ssh, al ver que podemos iniciar sesión obtenemos la flag del usuario:
 
 ![image](https://user-images.githubusercontent.com/122020487/227692100-a2cf7833-032b-479a-a807-168933dff8f4.png)
 
-Priemro vemos en los grupos a los que pertenecemos, viendo que estamos en el grupo lxd intentamos escalar privilegios a través de la creación de un contenedor: 
+Primero vemos en los grupos a los que pertenecemos, viendo que estamos en el grupo lxd intentamos escalar privilegios a través de la creación de un contenedor: 
 
 ![image](https://user-images.githubusercontent.com/122020487/227693865-b4271e46-4ade-4155-a2eb-49b1a0136318.png)
 
@@ -159,7 +158,7 @@ Ahora nos vamos a la máquina victima, nos descargamos los archivos y ejecutamos
 
 ![image](https://user-images.githubusercontent.com/122020487/227695853-513925fc-4045-4200-9f37-7cd702ea448f.png)
 
-Ahora procedemos a indicar el archivo, se nos creará un contenedor en el cual habrá montado la carpeta raiz de la máquina victima, como el contenedor lo hemos creado nosotros tendremos acceso root, por lo que podremos mirar el contenido que se ha montado en el contenedor sin nigún tipo de restricción, es por ello que podemos obtener la flag de root:
+Procedemos a indicar el archivo, se nos creará un contenedor en el cual habrá montado la carpeta raiz de la máquina victima, como el contenedor lo hemos creado nosotros tendremos acceso root, por lo que podremos mirar el contenido que se ha montado en el contenedor sin nigún tipo de restricción, es por ello que podemos obtener la flag de root:
 
 ![image](https://user-images.githubusercontent.com/122020487/227695989-8dc79b63-2342-4b00-a73c-66ea54a83c7a.png)
 
