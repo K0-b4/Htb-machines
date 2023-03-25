@@ -43,4 +43,5 @@ La escalada es bastante fácil, lanzamos el comando sudo -l y vemos que podemos 
 Por lo que conseguimos escalar privilegios con el siguiente comando: 
 
 sudo perl -e 'exec "/bin/bash";'
+
 ![image](https://user-images.githubusercontent.com/122020487/227736596-71021373-88cd-4ea4-b66a-452d940cda63.png)
