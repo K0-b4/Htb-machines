@@ -13,6 +13,7 @@ Como no vemos nada con lo que podamos empezar, comenzamos con el fuzzing de la w
 Vemos dos directorios en este caso nos interesa cgi-bins ya que a priori icons no debería ser de interés, por lo que procedemos a fuzzear el path de cgi-bin. Ya sabemos que este path contiene scripts y que puede ser vulnerable a shellshock por lo que procedemos a buscar los scripts que hay dentro del directorio:
 
 wfuzz -c --hc=404 -t 200 -w /home/kali/Tools/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -z list,sh-pl-cgi-ps1-py http://10.10.10.56/cgi-bin/FUZZ.FUZ2Z 
+
 ![image](https://user-images.githubusercontent.com/122020487/227735718-8d380e7b-4b3c-46b6-9a5e-f8d09a7103d0.png)
 
 Hemos obtenido el script user.sh, por lo que si hacemos una petición al directorio se nos descargará el script: 
