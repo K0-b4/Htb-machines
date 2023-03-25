@@ -18,13 +18,9 @@ Buscamos con searchsploit si hay algún exploit para nibbleblog:
 
 ![image](https://user-images.githubusercontent.com/122020487/227746405-565575df-bb44-479b-8757-fe18e294f132.png)
 
-Miramos el script y procedemos a buscar más información en github encontrando la siguiente información: 
+Miramos el script y procedemos a buscar más información en github encontrando dos credenciales de ejemplo por lo que entendemos que podrían ser credenciales predeterminadas:
 
 ![image](https://user-images.githubusercontent.com/122020487/227746448-e29a2c04-c35f-4cdb-a089-5aad11fe5fb8.png)
-
-Podemos ver que hay dos credenciales de ejemplo por lo que entendemos que podrían ser credenciales predeterminadas:
-
-![image](https://user-images.githubusercontent.com/122020487/227746516-02f8f5c5-70ed-4408-a028-b1847b15ffdd.png)
 
 Recordamos que en el script de metasploit había un recurso que es admin.php, por lo que procedemos a entrar y ponemos las credenciales encontradas, puediendo así acceder con las credenciales de admin:
 
